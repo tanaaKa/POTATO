@@ -16,7 +16,7 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "potato_core", "ace_ui", "ace_fortify","CUP_Weapons_LoadOrder", "CUP_Vehicles_LoadOrder", "CUP_Creatures_People_LoadOrder","Chernarus"
+            "potato_core", "ace_ui", "ace_fortify","CUP_Weapons_LoadOrder","Chernarus"
         };
         author = "Potato";
         authors[] = {"PabstMirror", "AACO"};

@@ -48,7 +48,7 @@ if ([_unit] call ACEFUNC(common,isMedic)) then {
 
     // Add kat medical to medics if the mod is enabled
     if (isClass(configFile >> "CfgPatches" >> "kat_main")) then {
-        if ((_configBackpackItems findIf {(_x select [0,10]) == "kat_X_AED"}) != -1) exitWith {}; // added via mission
+        if ((_configBackpackItems findIf {(_x select [0,10]) == "kat_chestSeal"}) != -1) exitWith {}; // added via mission
         _katItems = [
                         "kat_X_AED","kat_accuvac","kat_Pulseoximeter","kat_larynx:2","kat_aatKit:5","kat_guedel:5",
                         "kat_stethoscope","kat_chestSeal:4","kat_IO_FAST:4","kat_IV_16:6",

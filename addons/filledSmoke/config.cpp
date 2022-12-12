@@ -1,77 +1,72 @@
-#include "script_component.hpp"
+////////////////////////////////////////////////////////////////////
+//DeRap: config.bin
+//Produced from mikero's Dos Tools Dll version 9.10
+//https://mikero.bytex.digital/Downloads
+//'now' is Sun Dec 11 23:20:02 2022 : 'file' last modified on Sat Oct 01 11:06:58 2022
+////////////////////////////////////////////////////////////////////
 
-#ifndef POTATO_LEAN_RHS_CUP_HLC
+#define _ARMA_
 
-class CfgPatches {
-    class ADDON {
-        units[] = {};
-        weapons[] = {};
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"potato_core"};
-        author = "Potato";
-        authors[] = {"AACO"};
-        authorUrl = "https://github.com/BourbonWarfare/POTATO";
-        VERSION_CONFIG;
-    };
+class CfgPatches
+{
+	class potato_filledSmoke
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 2.04;
+		requiredAddons[] = {"potato_core","rhs_c_weapons"};
+		author = "Potato";
+		authors[] = {"AACO"};
+		authorUrl = "https://github.com/BourbonWarfare/POTATO";
+		version = "1.3.16.0";
+		versionStr = "1.3.16.0";
+		versionAr[] = {1,3,16,0};
+		ammo[] = {"SmokeShell","SmokeShellArty","rhs_ammo_rdg2_white","rhs_ammo_rdg2_black"};
+	};
 };
-
-class CfgCloudlets {
-    class SmokeShellWhiteSmall;
-    class GVAR(SmokeShellWhiteFilled): SmokeShellWhiteSmall {
-        animationSpeedCoef=0.75; //default 1
-        colorCoef[] = {"colorR", "colorG", "colorB", 3}; //default 1.8
-        // particleFSNtieth = 16; //default 16
-        // particleFSIndex = 12; //default 12
-        // particleFSFrameCount = 8; //default 8
-        sizeCoef = 2; //default 1
-        interval = 0.13; //default 0.2
-        lifeTime = 22; //default 14
-        moveVelocity[] = {0,0.1,0}; //default {0,0.3,0}
-        weight = 6.4; //default 1.26
-        volume = 5; //default 1
-        // rubbing = 0.05; //default 0.05
-        // size[] = {0.2,6,10}; //default {0.2,6,10}
-        // color[] = {
-        // {0.7,0.7,0.7,0.24},
-        // {0.7,0.7,0.7,0.26},
-        // {0.7,0.7,0.7,0.25},
-        // {0.7,0.7,0.7,0.22},
-        // {0.7,0.7,0.7,0.18},
-        // {0.7,0.7,0.7,0.1},
-        // {0.7,0.7,0.7,0.01}
-        // };
-        // randomDirectionPeriod= 0.3; //default 0.3
-        // randomDirectionIntensity = 0.15; //default 0.15
-        // destroyOnWaterSurfaceOffset = -0.3; //default -0.3
-        // MoveVelocityVar[] = {0.5,0.2,0.5}; //default {0.5,0.2,0.5}
-        // sizeVar = 0.6; //default 0.6
-        // colorVar[] = {0,0,0,0.05}; //default {0,0,0,0.05}
-    };
+class CfgCloudlets
+{
+	class SmokeShellWhiteSmall;
+	class potato_filledSmoke_SmokeShellWhiteFilled: SmokeShellWhiteSmall
+	{
+		animationSpeedCoef = 0.75;
+		colorCoef[] = {"colorR","colorG","colorB",3};
+		sizeCoef = 2;
+		interval = 0.13;
+		lifeTime = 22;
+		moveVelocity[] = {0,0.1,0};
+		weight = 6.4;
+		volume = 5;
+	};
 };
-
-class GVAR(bigSmoke) {
-    class SmokeShellWhite {
-        simulation = "particles";
-        type = QGVAR(SmokeShellWhiteFilled);
-        position[] = {0,0,0};
-        intensity = 5;
-        interval = .333;
-    };
+class potato_filledSmoke_bigSmoke
+{
+	class SmokeShellWhite
+	{
+		simulation = "particles";
+		type = "potato_filledSmoke_SmokeShellWhiteFilled";
+		position[] = {0,0,0};
+		intensity = 5;
+		interval = 0.333;
+	};
 };
-
-class CfgAmmo {
-    class GrenadeHand;
-    class SmokeShell: GrenadeHand {
-        effectsSmoke = QGVAR(bigSmoke);
-    };
-    class SmokeShellArty: SmokeShell {
-        effectsSmoke = QGVAR(bigSmoke);
-    };
-    // class rhs_ammo_rdg2_white: SmokeShell {
-    //     effectsSmoke = QGVAR(bigSmoke);
-    // };
-    // class rhs_ammo_rdg2_black: rhs_ammo_rdg2_white {
-    //     effectsSmoke = QGVAR(bigSmoke);
-    // };
+class CfgAmmo
+{
+	class GrenadeHand;
+	class SmokeShell: GrenadeHand
+	{
+		effectsSmoke = "potato_filledSmoke_bigSmoke";
+	};
+	class SmokeShellArty: SmokeShell
+	{
+		effectsSmoke = "potato_filledSmoke_bigSmoke";
+	};
+	class rhs_ammo_rdg2_white: SmokeShell
+	{
+		effectsSmoke = "potato_filledSmoke_bigSmoke";
+	};
+	class rhs_ammo_rdg2_black: rhs_ammo_rdg2_white
+	{
+		effectsSmoke = "potato_filledSmoke_bigSmoke";
+	};
 };
-#endif

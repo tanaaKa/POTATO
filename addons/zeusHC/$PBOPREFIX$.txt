@@ -1,0 +1,6 @@
+//<'zeusHC.pbo' properties via Mikero's dos tools, dll version 9.10>
+prefix=z\potato\addons\zeusHC;
+Mikero=DePbo.dll.8.35;
+version=22100111;
+//PboType=Arma Addon;
+//</properties>

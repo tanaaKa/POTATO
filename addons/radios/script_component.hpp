@@ -64,7 +64,7 @@
 #define CIV_LR "civ117"
 
 // Default setting values
-#define DEFAULT_ENABLED false
+#define DEFAULT_ENABLED true
 
 #define DEFAULT_SR_NAMES "Alpha 1","Alpha 2","Bravo 1","Bravo 2","Charlie 1","Charlie 2","Delta 1","Delta 2","Weapons"
 #define DEFAULT_MR_NAMES "ALPHA NET","BRAVO NET","CHARLIE NET","DELTA NET","1ST PLATOON NET","2ND PLATOON NET","COMPANY NET","AIR SUPPORT NET","ARMOR NET","FIRE SUPPORT NET","MEDICAL"

@@ -71,7 +71,9 @@ if (_sideCount < 3) then {
 
 // check the mission description for ratio information
 private _description = ctrlText DESCRIPTION;
+// private _description = "Multiplayer" get3DENMissionAttribute "IntelOverviewText";
 private _ratioCanidate = (_description splitString " ") select 0;
+
 TRACE_2("prefill info",_description,_ratioCanidate);
 
 // if the ratio information looks good, try to parse it

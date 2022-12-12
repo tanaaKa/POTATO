@@ -10,7 +10,7 @@ _settings = [
 	// Medical:
 	[QACEGVAR(medical,bleedingcoefficient), 0.4, true], // default: 1.0 (also set in mission.sqm) [forced to override old bwmf]
 	[QACEGVAR(medical,ivFlowRate), 2.5], // default: 1.0
-	[QACEGVAR(medical,spontaneousWakeUpChance), 0.6, true], // default: 0.05
+	[QACEGVAR(medical,spontaneousWakeUpChance), 0.15, true], // default: 0.05
 	[QACEGVAR(medical,spontaneousWakeUpEpinephrineBoost), 2, true], // default: 1
 	[QACEGVAR(medical,deathChance), 0, true],
 	[QACEGVAR(medical,fatalDamageSource), 0, true],
@@ -22,7 +22,7 @@ _settings = [
 	[QACEGVAR(medical_treatment,litterCleanupDelay), 300, true], // default: 600
 	[QACEGVAR(medical_treatment,cprSuccessChanceMin), 0.4, true], // default: 0.4
 	[QACEGVAR(medical_treatment,cprSuccessChanceMax), 0.85, true], // default: 0.4
-	[QACEGVAR(medical_statemachine,AIUnconsciousness), true], // default: true
+	[QACEGVAR(medical_statemachine,AIUnconsciousness), false, true], // default: true
 	[QACEGVAR(medical_statemachine,cardiacArrestTime), 600, true], // default: 30
 	[QACEGVAR(medical_statemachine,fatalInjuriesAI), 0, true], // default: 0
 	[QACEGVAR(medical_treatment,advancedBandages), 1, true], // default: 0
@@ -64,7 +64,7 @@ _settings = [
 	[QACEGVAR(cookoff,enable), 1],
 	[QACEGVAR(cookoff,ammoCookoffDuration), 0.15],
 	[QACEGVAR(finger,enabled), true],
-	[QACEGVAR(fortify,timeCostCoefficient), 0.5, true],
+	[QACEGVAR(fortify,timeCostCoefficient), 0.35, true],
 	[QACEGVAR(fortify,timeMin), 0, true],
 	[QACEGVAR(frag,maxTrack), 2],
 	[QACEGVAR(gforces,enabledFor), 0],
