@@ -50,57 +50,18 @@ class CfgWeapons {
         discreteDistanceInitIndex = 1;
     };
 
-    class CUP_arifle_RPK74;
-    class potato_arifle_RPK: CUP_arifle_RPK74 {
-        // CUP_arifle_RPK74 is actually a chambered in 7.62 and just called RPK in-game
-        // CUP_arifle_RPK74_45 is the 5.45 version and is called RPK-74 in game
-        // so this isn't needed anymore
-        scope = 1;
-        UiPicture = "\A3\weapons_f\data\UI\icon_mg_CA.paa"; // STHUD/DUI Compat
-    };
-
     // Add "plot armor" to some vests /* From V_PlateCarrier2_rgr */
 
     class ItemCore;
-    class CUP_Vest_Camo_Base;
-    class CUP_V_B_ALICE: CUP_Vest_Camo_Base {
-        class ItemInfo;
-    };
-    class rhsgref_alice_webbing_bwArmorMod: CUP_V_B_Alice { // must keep old classname, but this is now based on CUP
-        displayName = "ALICE Webbing [coop plot armor]";
-        descriptionShort = "Armor Level IV";
-        class ItemInfo: ItemInfo {
-            class HitpointsProtectionInfo {
-                class Chest {
-                    HitpointName = "HitChest";
-                    armor = 20;
-                    PassThrough = 0.2;
-                };
-                class Diaphragm {
-                    HitpointName = "HitDiaphragm";
-                    armor = 20;
-                    PassThrough = 0.2;
-                };
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 20;
-                    passThrough = 0.2;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    passThrough = 0.2;
-                };
-            };
-        };
-    };
+    //class Vest_Camo_Base;
     class Vest_Camo_Base: ItemCore {
         class ItemInfo;
     };
-    class CUP_V_CDF_CrewBelt: Vest_Camo_Base {
-        class ItemInfo: ItemInfo {};
+    class rhs_6sh92: Vest_Camo_Base {
+        class ItemInfo;
     };
-    class CUP_V_CDF_CrewBelt_bwArmorMod: CUP_V_CDF_CrewBelt {
-        displayName = "Vydra-3M [coop plot armor]";
+    class plotarmor_6sh92: rhs_6sh92 { 
+        displayName = "6Sh92 [Plot Armor]";
         descriptionShort = "Armor Level IV";
         class ItemInfo: ItemInfo {
             class HitpointsProtectionInfo {
@@ -126,15 +87,66 @@ class CfgWeapons {
             };
         };
     };
-
-    class mgun;
-    class cup_vlmg_m134_veh: mgun {
-        class lowrof: mode_fullauto {
-            class standardsound {
-                // JSRS uses 
-                // soundsetshot[] = {"jsrs_m134_shot_soundset","jsrs_5x56mm_reverb_soundset"};
-                // but you cannot hear at range?? Just revert back to cup's
-                soundSetShot[] = {"CUP_M134_Shot_SoundSet","CUP_mmg1_Tail_SoundSet"};
+    // class Vest_Camo_Base: ItemCore {
+    //     class ItemInfo;
+    // };
+    class rhs_vydra_3m: Vest_Camo_Base {
+        class ItemInfo: ItemInfo {};
+    };
+    class plotarmor_vydra_3m: rhs_vydra_3m {
+        displayName = "Vydra-3M [Plot Armor]";
+        descriptionShort = "Armor Level IV";
+        class ItemInfo: ItemInfo {
+            class HitpointsProtectionInfo {
+                class Chest {
+                    HitpointName = "HitChest";
+                    armor = 20;
+                    PassThrough = 0.2;
+                };
+                class Diaphragm {
+                    HitpointName = "HitDiaphragm";
+                    armor = 20;
+                    PassThrough = 0.2;
+                };
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 20;
+                    passThrough = 0.2;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    passThrough = 0.2;
+                };
+            };
+        };
+    };
+    class rhs_belt_holster: Vest_Camo_Base {
+        class ItemInfo: ItemInfo {};
+    };
+    class plotarmor_belt: rhs_belt_holster {
+        displayName = "Belt Equipment (Holster) [Plot Armor]";
+        descriptionShort = "Armor Level IV";
+        class ItemInfo: ItemInfo {
+            class HitpointsProtectionInfo {
+                class Chest {
+                    HitpointName = "HitChest";
+                    armor = 20;
+                    PassThrough = 0.2;
+                };
+                class Diaphragm {
+                    HitpointName = "HitDiaphragm";
+                    armor = 20;
+                    PassThrough = 0.2;
+                };
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 20;
+                    passThrough = 0.2;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    passThrough = 0.2;
+                };
             };
         };
     };
