@@ -177,7 +177,6 @@ _openForumFinishedMissions ctrlCommit 0;
 private _missionMaker = getMissionConfigValue ["author","????"];
 private _missionName = getText (missionConfigFile >> "MissionSQM" >> "Mission" >> "Intel" >> "briefingName");
 private _missionType = A_MISSION_TYPE select (getMissionConfigValue QGVAR(missionType));
-private _missionVersion = getMissionConfigValue QGVAR(missionVersion);
 
 private _missionCustomScriptingVar = getMissionConfigValue QGVAR(missionFlagCustomScripting);
 private _missionCustomScripting =  if(isNil QUOTE(_missionCustomScriptingVar)) then {"No"} else {A_YESNO select _missionCustomScriptingVar};
@@ -250,7 +249,6 @@ _ctrlCreateInfoBlockText = composeText [
     ,parseText "<t color='#0080FF'>Mission Maker:</t> ",_missionMaker, lineBreak
     ,parseText "<t color='#0080FF'>Mission Name:</t> ", _missionName, lineBreak
     ,parseText "<t color='#0080FF'>Mission Type:</t> ",_missionType, lineBreak
-    ,parseText "<t color='#0080FF'>Mission Version:</t> ",_missionVersion, lineBreak
     ,lineBreak
     ,parseText "<t color='#FF8000'>MISSION SUMMARY</t>"
     ,_separator
