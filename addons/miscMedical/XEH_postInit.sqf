@@ -443,10 +443,11 @@ if (hasInterface) then {
         //[_origin, _mass, _filler] call DFUNC(generateVisuals);
     }] call CBA_fnc_addEventHandler;
 
+    /*
     // Increase lethality when taking sustained critical damage to body/head
 
-    // ToDo: Move this to ace_medical_damage_fnc_determineIfFatal
-    // FATAL_SUM_DAMAGE_WEIBULL_L / K values
+    // Determined to be buggy via Kilo from BW
+    // Needs complete rework
     [{
         TRACE_1("adding woundRecieved handler",GVAR(isTVT));
 
@@ -467,7 +468,7 @@ if (hasInterface) then {
         }] call CBA_fnc_addEventHandler;
     }, [], 5] call CBA_fnc_waitAndExecute;
 
-/* // Medical debug
+    // Medical debug
     // debug for uncon:
     ["ace_unconscious", {
         params ["_unit", "_active"];
