@@ -6,7 +6,7 @@
     Skip warning if changed by mission <BOOL>
 */
 
-_settings = [
+_coopSettings = [
 	// Medical:
 	[QACEGVAR(medical,bleedingcoefficient), 0.4, true], // default: 1.0 (also set in mission.sqm) [forced to override old bwmf]
 	[QACEGVAR(medical,ivFlowRate), 2.5], // default: 1.0
@@ -25,6 +25,7 @@ _settings = [
 	[QACEGVAR(medical_statemachine,AIUnconsciousness), false, true], // default: true
 	[QACEGVAR(medical_statemachine,cardiacArrestTime), 600, true], // default: 30
 	[QACEGVAR(medical_statemachine,fatalInjuriesAI), 0, true], // default: 0
+	[QACEGVAR(medical_statemachine,fatalInjuriesPlayer), 1, true], // default: 0
 	[QACEGVAR(medical_treatment,advancedBandages), 1, true], // default: 0
 	[QACEGVAR(medical_treatment,advancedMedication), true, true], // default: true
 	[QACEGVAR(medical,limping), 1, true], // default: 1
