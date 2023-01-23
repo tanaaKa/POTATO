@@ -218,6 +218,7 @@ if (isNil "_loadoutArray") then {
 // set unit loadout overrides our sick shades :(
 //_loadoutArray set [LA_FACEWARE_INDEX, goggles _unit];
 _unit setUnitLoadout _loadoutArray;
+_unit setFace _face;
 
 if (isText (_path >> "init")) then {
     TRACE_1("calling init code", getText (_path >> "init"));
