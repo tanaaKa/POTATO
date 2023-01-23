@@ -9,7 +9,7 @@ if ([ace_player, QEGVAR(adminGun,gun), false] call CBA_fnc_addItem) then {
 [
     "potato_adminMsg",
     [
-        "Giving themselves Admin Gun",
+        "Giving themselves an admin gun",
         profileName
     ]
 ] call CBA_fnc_globalEvent;
