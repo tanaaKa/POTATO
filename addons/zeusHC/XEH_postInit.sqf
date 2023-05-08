@@ -6,5 +6,6 @@ if (isServer) then {
 
 if (hasInterface) then {
     ["zen_curatorDisplayLoaded", LINKFUNC(autoModule_setup)] call CBA_fnc_addEventHandler;
+    //[] remoteExec ["CMF_fnc_addLoadoutModule", _selectedUnit];
     // ["zen_editor_treesLoaded", { diag_log text "zen_editor_treesLoaded"; }] call CBA_fnc_addEventHandler; // next vers
 };

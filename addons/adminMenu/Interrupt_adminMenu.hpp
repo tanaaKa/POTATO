@@ -224,7 +224,7 @@ class GVAR(adminMenuDialog) {
                     y = 0.48 * safezoneH;
                     w = 0.2 * safezoneW;
                     h = 0.044 * safezoneH;
-                    action = QUOTE([west] call FUNC(uihook_endMission));
+                    action = QUOTE([west] spawn FUNC(uihook_endMission));
                 };
                 class RscButton_1611: RscButton {
                     idc = -1;
@@ -233,7 +233,7 @@ class GVAR(adminMenuDialog) {
                     y = 0.48 * safezoneH;
                     w = 0.2 * safezoneW;
                     h = 0.044 * safezoneH;
-                    action = QUOTE([east] call FUNC(uihook_endMission));
+                    action = QUOTE([east] spawn FUNC(uihook_endMission));
                 };
                 class RscButton_1612: RscButton {
                     idc = -1;
@@ -242,7 +242,7 @@ class GVAR(adminMenuDialog) {
                     y = 0.52 * safezoneH;
                     w = 0.2 * safezoneW;
                     h = 0.044 * safezoneH;
-                    action = QUOTE([resistance] call FUNC(uihook_endMission));
+                    action = QUOTE([resistance] spawn FUNC(uihook_endMission));
                 };
                 class RscButton_1613: RscButton {
                     idc = -1;
@@ -251,7 +251,7 @@ class GVAR(adminMenuDialog) {
                     y = 0.52 * safezoneH;
                     w = 0.2 * safezoneW;
                     h = 0.044 * safezoneH;
-                    action = QUOTE([civilian] call FUNC(uihook_endMission));
+                    action = QUOTE([civilian] spawn FUNC(uihook_endMission));
                 };
             };
         };

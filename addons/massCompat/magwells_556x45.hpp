@@ -30,11 +30,11 @@
             MAGAZINE_WELL_MAG(556x45,150)
         };
     };            // H&K G36
-    class CBA_556x45_HK33 {
-        GVAR(mags)[] = {
-            MAGAZINE_WELL_ALT_MAG(556x45,30,hk33)
-        };
-    };           // H&K 33/53/93
+    // class CBA_556x45_HK33 {
+    //     GVAR(mags)[] = {
+    //         MAGAZINE_WELL_ALT_MAG(556x45,30,hk33)
+    //     };
+    // };           // H&K 33/53/93
     class CBA_556x45_M21 {
         GVAR(mags)[] = {
             MAGAZINE_WELL_MAG(556x45,20),
