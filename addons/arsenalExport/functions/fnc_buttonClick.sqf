@@ -140,8 +140,6 @@ switch (toLower _fncString)
       GVAR(loadout_hmgMags) = ((secondaryWeaponMagazine _unit) + (magazines _unit)) arrayIntersect([GVAR(loadout_hmg)] call CBA_fnc_compatibleMagazines);
       GVAR(loadout_hmgAttachments) = secondaryWeaponItems _unit;
 	  switch (GVAR(loadout_hmg)) do {
-	  case "CUP_KORD_carry";
-	  case "CUP_m2_carry";
 	  case "ace_csw_staticM2ShieldCarry";
 	  case "ace_csw_staticHMGCarry";
 	  default {

@@ -47,12 +47,13 @@ if ((GVAR(setVehicleLoadouts) == -1) || {_loadout == "Empty"}) exitWith {
 };
 
 private _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+
 if (!isClass _path) then {
     //No CfgLoadouts for exact loadout, try default
     private _vehConfigSide = [_theVehicle, true] call BIS_fnc_objectSide;
     private _vehConfigFactions = switch (_vehConfigSide) do {
         case (west): { ["blu_f", "potato_w"] };
-        case (east): { ["opf_f", "potato_e"] };
+        case (east): { ["opf_f", "potato_e", "potato_msv"] }; // potato_msv is depcrecated but kept for BWC for now
         case (independent): { ["ind_f", "potato_i"] };
         default { ["civ_f"] };
     };

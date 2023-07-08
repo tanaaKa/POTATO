@@ -14,20 +14,6 @@ class CfgAmmo {
         // Makes the ammo fall the ground slower
     };
 
-    // CUP
-    class CUP_Sub_F_40mm_StarCluster_White: F_40mm_White {
-        intensity = 1250000; // rhs: 100000
-        timeToLive = 40; // rhs: 60
-    };
-    class CUP_Sub_F_40mm_StarCluster_Red: F_40mm_White {
-        intensity = 1250000; // rhs: 100000
-        timeToLive = 40; // rhs: 60
-    };
-    class CUP_Sub_F_40mm_StarCluster_Green: F_40mm_White {
-        intensity = 1250000; // rhs: 100000
-        timeToLive = 40; // rhs: 60
-    };
-
     // Leave colored flares for signaling, matching RHS values
     class F_40mm_Green: F_40mm_White {
         brightness = 25;

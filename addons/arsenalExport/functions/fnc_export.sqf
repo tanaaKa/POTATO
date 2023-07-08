@@ -51,7 +51,7 @@ _lines pushBack format ['#define RIFLE "%1"', GVAR(loadout_rifle)];
 _lines pushBack format ['#define RIFLE_MAG %1', [GVAR(loadout_rifle), GVAR(loadout_rifleMags), 300] call _fnc_getMags];
 _lines pushBack format ['#define RIFLE_ATTACHMENTS %1', [GVAR(loadout_rifleAttachments)] call _fnc_formatList];
 _lines pushBack format ['#define AR_ATTACHMENTS RIFLE_ATTACHMENTS, %1', [GVAR(loadout_arAttachments)] call _fnc_formatList];
-_lines pushBack format ['#define ALT_OPTICS "optic_Aco","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad",STANAG_OPTICS,WARSAW_OPTICS'];
+_lines pushBack format ['#define ALT_OPTICS "optic_Aco",STANAG_OPTICS,WARSAW_OPTICS'];
 
 _lines pushBack format ["// GL Rifle"];
 _lines pushBack format ['#define GLRIFLE "%1"', GVAR(loadout_glrifle)];

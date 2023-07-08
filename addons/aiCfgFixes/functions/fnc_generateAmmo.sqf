@@ -116,23 +116,22 @@ private _setAiUsageFlags = {
         _retAmmo;
     };
     
-    _retAmmo = [_retAmmo, "potato_aiCfgFixes_he_rocket",    [64, 128, 512],         [["cost", "100"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_70mm_Hydra_HE",            [64, 128, 512],         [["cost", "100"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "potato_aiCfgFixes_he_rocket",    [64, 128, 512],         [["cost", "50"]]] call _setUsageFlags;
     _retAmmo = [_retAmmo, "rhs_rpg26_rocket",               [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
-    
-    _retAmmo = [_retAmmo, "CUP_R_SMAW_HEDP_N",              [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_RPG18_AT",                 [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_MEEWS_HEDP",               [64, 128, 256, 512],    [["cost", "150"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_M136_AT",                  [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_SMAW_HEDP",                [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_OG7_AT",                   [64, 128, 256],         [["cost", "50"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_TBG7V_AT",                 [64, 128, 256],         [["cost", "150"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_PG7VR_AT",                 [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_PG7VM_AT",                 [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_PG7V_AT",                  [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_PG7VL_AT",                 [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_57mm_HE",                  [64, 128, 256, 512],    [["cost", "150"]]] call _setUsageFlags;
-    _retAmmo = [_retAmmo, "CUP_R_M72A6_AT",                 [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg18_rocket",               [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg75_rocket",               [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_mag_maaws_HE",               [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_mag_maaws_HEDP",             [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_mag_maaws_HEAT",             [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg7_OG7V_mag",              [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg7_PG7V_mag",              [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg7_PG7VL_mag",             [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg7_PG7VM_mag",             [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "RPG7_F",                         [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg7_PG7VR_mag",             [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg7_PG7VS_mag",             [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg7_TBG7V_mag",             [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
+    _retAmmo = [_retAmmo, "rhs_rpg7_type69_airburst_mag",   [64, 128, 256, 512],    [["cost", "50"]]] call _setUsageFlags;
     
     _retAmmo
 };

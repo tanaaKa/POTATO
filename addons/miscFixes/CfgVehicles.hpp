@@ -13,6 +13,10 @@ class CfgVehicles {
         displayName = "delete me and use acex_fortify_buildLocationModule";
     };
 
+    // Make vanilla Chinook and EH302 (IDAP/FIA transport heli) float on water. Matches CUP Chinook/CH-53e and other heavy lift helos. Should be extended to all helicopters from mods that could feasibly float. Direction on BIS method from Steam Workshop user "crub"
+    class Helicopter_Base_H;
+	class Heli_Transport_03_base_F: Helicopter_Base_H {waterLeakiness=0.1;};
+    class Heli_Transport_02_base_F: Helicopter_Base_H {waterLeakiness=0.1;};
 
     // Integrate invisibile backpack from SagJangi
     // https://forums.bohemia.net/forums/topic/222097-battle-belt/

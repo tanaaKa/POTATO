@@ -38,100 +38,6 @@ class CfgAmmo {
         GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
     };
     class R_PG32V_F;
-    class CUP_R_SMAW_HEDP_N: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 50;
-    };
-    class CUP_R_RSHG2_HE: RocketBase {
-        audibleFire = 16;
-    };
-    class CUP_R_PG26_AT: RocketBase {
-        audibleFire = 16;
-    };
-    class CUP_R_RPG18_AT: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 50;
-    };
-    class CUP_R_APILAS_AT: RocketBase {
-        audibleFire = 16;
-    };
-    class CUP_R_MEEWS_HEDP: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 150;
-    };
-    class CUP_R_M136_AT: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 50;
-    };
-    class CUP_R_SMAW_HEDP: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 50;
-    };
-    class CUP_R_70mm_Hydra_HE: RocketBase {
-        aiAmmoUsageFlags = "64 + 128 + 512";
-        allowAgainstInfantry = 1;
-        cost = 100;
-    };
-    class CUP_R_PZF3IT_AT: RocketBase {
-        audibleFire = 16;
-    };
-    class CUP_R_OG7_AT: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256";
-        allowAgainstInfantry = 1;
-        cost = 50;
-    };
-    class CUP_R_TBG7V_AT: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256";
-        allowAgainstInfantry = 1;
-        cost = 150;
-    };
-    class CUP_R_PG7VR_AT: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 50;
-    };
-    class CUP_R_PG7VL_AT: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 50;
-    };
-    class CUP_R_PG7VM_AT: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 50;
-    };
-    class CUP_R_PG7V_AT: RocketBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 50;
-    };
     class rhs_ammo_rpg75_rocket: R_PG32V_F {
         audibleFire = 16;
     };
@@ -152,99 +58,11 @@ class CfgAmmo {
     class potato_bullet_556x45: BulletBase {
         audibleFire = 100;
     };
-    class CUP_B_25mm_APFSDS_White_Tracer: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_25mm_HE_White_Tracer: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_30mm_CAS_Red_Tracer: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_30x113mm_M789_HEDP_Red_Tracer: BulletBase {
-        audibleFire = 28;
-    };
-    class CUP_B_23mm_APHE_Green_Tracer: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_23mm_APHE_No_Tracer: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_23mm_AA: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_23mm_APHE_Tracer_Green: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_20mm_AA: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_20mm_API_Tracer_Red: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_20mm_APHE_Tracer_Red: BulletBase {
-        audibleFire = 32;
-    };
-    class CUP_B_20mm_AP_Tracer_Red: BulletBase {
-        audibleFire = 28;
-    };
-    class CUP_B_19mm_HE: BulletBase {
-        audibleFire = 18;
-    };
-    class CUP_B_145x115_AP_Green_Tracer: BulletBase {
-        audibleFire = 25;
-    };
-    class CUP_B_127x108_Ball_Green_Tracer: BulletBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-    };
     class B_127x107_Ball: BulletBase {
         audibleFire = AI_AUDIBLE_FIRE_0;
         GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
     };
-    class CUP_B_762x25_Ball: BulletBase {
-        audibleFire = 45;
-    };
-    class CUP_B_46x30_Ball: BulletBase {
-        audibleFire = 7;
-    };
-    class CUP_B_50AE_Ball: BulletBase {
-        audibleFire = 45;
-    };
-    class CUP_B_765x17_Ball: BulletBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-    };
-    class CUP_B_9x19_AP: BulletBase {
-        audibleFire = 5;
-    };
-    class CUP_B_9x19_Ball: BulletBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-    };
-    class CUP_B_9x18_Ball: BulletBase {
-        audibleFire = 5;
-    };
-    class CUP_B_86x70_Ball_noTracer: BulletBase {
-        audibleFire = 22;
-    };
-    class CUP_B_9x39_SP5: BulletBase {
-        audibleFire = AI_AUDIBLE_FIRE_1;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_1";
-    };
-    class CUP_B_762x54_Ball_White_Tracer: BulletBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-    };
-    class CUP_B_303_Ball: BulletBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-    };
     class B_762x51_Ball: BulletBase {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-    };
-    class CUP_B_762x39_Ball: BulletBase {
         audibleFire = AI_AUDIBLE_FIRE_0;
         GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
     };
@@ -343,41 +161,11 @@ class CfgAmmo {
     class G_40mm_HE: GrenadeBase {
         audibleFire = 30;
     };
-    class CUP_G_40mm_HE;
-    class CUP_G_30mm_HE: CUP_G_40mm_HE {
-        audibleFire = 18;
-    };
-    class CUP_R_CRV7_C18_HE: CUP_R_70mm_Hydra_HE {
-        audibleFire = 32;
-    };
-    class CUP_B_9x19_Ball_SD: CUP_B_9x19_Ball {
-        audibleFire = 0.35;
-    };
-    class CUP_B_9x18_SD: CUP_B_9x18_Ball {
-        audibleFire = AI_AUDIBLE_FIRE_1;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_1";
-    };
-    class CUP_B_762x51_noTracer;
     class rhs_B_762x39_Ball: B_762x51_Ball {
         audibleFire = AI_AUDIBLE_FIRE_0;
         GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
     };
     class rhs_B_762x54_Ball: B_762x51_Ball {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-    };
-    class CUP_B_762x51_White_Tracer_3RndBurst: CUP_B_762x51_noTracer {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-    };
-    class CUP_B_762x51_Red_Tracer_3RndBurst: CUP_B_762x51_noTracer {
-        audibleFire = AI_AUDIBLE_FIRE_0;
-        GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
-    };
-    class CUP_B_762x39_Ball_Subsonic: CUP_B_762x39_Ball {
-        audibleFire = 3;
-    };
-    class CUP_B_762x39_Ball_Tracer_Green: CUP_B_762x39_Ball {
         audibleFire = AI_AUDIBLE_FIRE_0;
         GVAR(macroUsed) = "AI_AUDIBLE_FIRE_0";
     };
@@ -509,16 +297,6 @@ class CfgAmmo {
         aiAmmoUsageFlags = "64 + 128 + 512";
         allowAgainstInfantry = 1;
         cost = 100;
-    };
-    class CUP_R_57mm_HE: RocketBase {
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 150;
-    };
-    class CUP_R_M72A6_AT: RocketBase {
-        aiAmmoUsageFlags = "64 + 128 + 256 + 512";
-        allowAgainstInfantry = 1;
-        cost = 50;
     };
 };
 
