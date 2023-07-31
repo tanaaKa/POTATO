@@ -68,6 +68,8 @@ _settings = [
 
 	// ACE Interaction
 	[QACEGVAR(interaction,disableNegativeRating), true, true],
+	[QACEGVAR(interaction,useListMenu), true, true],
+	[QACEGVAR(interaction,useListMenuSelf), true, true],
 	[QACEGVAR(interaction,enableGroupRenaming), false, true],
 	[QACEGVAR(interaction,enableMagazinePassing), false, true],
 	[QACEGVAR(interaction,enableTeamManagement), true, true],
@@ -76,10 +78,10 @@ _settings = [
 	[QACEGVAR(interact_menu,menuAnimationSpeed), 2, true],
 
 	// ACE Logistics
-	[QACEGVAR(cargo,enable), false, true],
+	[QACEGVAR(cargo,enable), true, true],
 	[QACEGVAR(cargo,carryAfterUnload), true, true],
 	[QACEGVAR(cargo,enableRename), true, true],
-	[QACEGVAR(cargo,loadTimeCoefficient), 5, true],
+	[QACEGVAR(cargo,loadTimeCoefficient), 2, true],
 	[QACEGVAR(cargo,openAfterUnload), 3, true],
 	[QACEGVAR(cargo,paradropTimeCoefficent), 2.5, true],
 
@@ -129,10 +131,10 @@ _settings = [
 	[QACEGVAR(medical,fractures), 1, true],
 	[QACEGVAR(medical,bleedingcoefficient), 0.4, true], // default: 1.0 (also set in mission.sqm) [forced to override old bwmf]
 	[QACEGVAR(medical,ivFlowRate), 2.5], // default: 1.0
-	[QACEGVAR(medical,spontaneousWakeUpChance), 0.25, true], // default: 0.05
+	[QACEGVAR(medical,spontaneousWakeUpChance), 0.15, true], // default: 0.05
 	[QACEGVAR(medical,spontaneousWakeUpEpinephrineBoost), 2, true], // default: 1
-	[QACEGVAR(medical,deathChance), 1, true],
-	[QACEGVAR(medical,fatalDamageSource), 2, true],
+	[QACEGVAR(medical,deathChance), 0.75, true],
+	[QACEGVAR(medical,fatalDamageSource), 0, true],
 	[QACEGVAR(medical,fractureChance), 0.4, true],
 	[QACEGVAR(medical,painCoefficient), 1.3, true],
 	[QACEGVAR(medical,painUnconsciousChance), 0.3, true],
@@ -155,7 +157,7 @@ _settings = [
 	[QACEGVAR(medical_ai,enabledFor), 0, true],
 	[QACEGVAR(medical_blood,enabledFor), 2],
 	[QACEGVAR(medical_treatment,holsterRequired), 1, true],
-	[QACEGVAR(medical,playerDamageThreshold), 2, true],
+	[QACEGVAR(medical,playerDamageThreshold), 1, true],
 	[QACEGVAR(medical,AIDamageThreshold), 0.3, true],
 	[QACEGVAR(medical_feedback,painEffectType), 1, true],
 	[QACEGVAR(medical_feedback,bloodVolumeEffectType), 0, true],
@@ -203,7 +205,7 @@ _settings = [
 	// ACE Quick mount
 	[QACEGVAR(quickmount,distance), 3, true],
 	[QACEGVAR(quickmount,enabled), true, true], 
-	[QACEGVAR(quickmount,enableMenu), 0, true], 
+	[QACEGVAR(quickmount,enableMenu), 3, true], 
 	[QACEGVAR(quickmount,priority), 0],
 	[QACEGVAR(quickmount,speed), 10, true],
 	
@@ -226,8 +228,8 @@ _settings = [
 	[QACEGVAR(ui,groupBar), false, true], // Forced because it's User settable
 
 	// ACE Vehicle Lock
-	[QACEGVAR(vehiclelock,lockVehicleInventory), true, true],
-	[QACEGVAR(vehiclelock,vehicleStartingLockState), 1, true],
+	[QACEGVAR(vehiclelock,lockVehicleInventory), false, true],
+	[QACEGVAR(vehiclelock,vehicleStartingLockState), -1, true],
 
 	// ACE Vehicles
 	[QACEGVAR(novehicleclanlogo,enabled), true, true],
@@ -254,6 +256,7 @@ _settings = [
 	["acre_sys_core_ts3ChannelName", "In-game (ACRE)", true],
 	["acre_sys_core_ts3ChannelSwitch", true, true],
 	["acre_sys_core_unmuteClients", true, true],
+	["acre_sys_signal_signalModel", 0, true],
 	["acre_sys_gestures_enabled", true, true],
 	["acre_sys_gestures_stopADS", true, true],
 	["acre_sys_zeus_zeusCanSpectate", true, true],
@@ -288,7 +291,6 @@ _settings = [
 	["grad_trenches_functions_playersInAreaRadius", 200, true],
 	["grad_trenches_functions_stopBuildingAtFatigueMax", false, true],
 	["grad_trenches_functions_timeoutToDecay", 7200, true],
-
 
 	// IFX - ACE3 Window Break
 	["IFX_ACE3WindowBreak_setting_allowInvincible", true, true],
@@ -474,35 +476,35 @@ _settings = [
 	["L_Immerse_twitch", true, true],
 
 	// LAxemann's Suppress
-	["L_Suppress_buildup", 0.6, true],
+	["L_Suppress_buildup", 1.5, true],
 	["L_Suppress_enabled", true, true],
 	["L_Suppress_flyByEffects", true, true],
-	["L_Suppress_flyByIntensity", 1, true],
+	["L_Suppress_flyByIntensity", 1.5, true],
 	["L_Suppress_halting", true, true],
-	["L_Suppress_intensity", 0.6, true],
+	["L_Suppress_intensity", 0.75, true],
 	["L_Suppress_playerSwabEnabled", false, true],
-	["L_Suppress_recovery", 1.5, true],
+	["L_Suppress_recovery", 1, true],
 
 	// Recoil coefficient changer
-	["RECOIL_accumulative_on", 1.02, false],
-	["RECOIL_AI_on", false, false],
-	["RECOIL_force_on", 50, false],
-	["RECOIL_handgun_on", true, false],
-	["RECOIL_incrase_on", 1.2, false],
-	["RECOIL_limit_on", 2, false],
-	["RECOIL_loop_on", true, false],
-	["RECOIL_negative_on", 0, false],
-	["RECOIL_new_on", true, false],
-	["RECOIL_random_on", true, false],
-	["RECOIL_randomMax_on", 1.4, false],
-	["RECOIL_randomMid_on", 1.1, false],
-	["RECOIL_randomMin_on", -1, false],
-	["RECOIL_Smooth_on", true, false],
-	["RECOIL_variety_on", true, false],
-	["SWAY_incrase_on", 1, false],
+	["RECOIL_accumulative_on", 1.02, true],
+	["RECOIL_AI_on", true, true],
+	["RECOIL_force_on", 50, true],
+	["RECOIL_handgun_on", true, true],
+	["RECOIL_incrase_on", 1.2, true],
+	["RECOIL_limit_on", 2, true],
+	["RECOIL_loop_on", true, true],
+	["RECOIL_negative_on", 0, true],
+	["RECOIL_new_on", true, true],
+	["RECOIL_random_on", true, true],
+	["RECOIL_randomMax_on", 1.4, true],
+	["RECOIL_randomMid_on", 1.1, true],
+	["RECOIL_randomMin_on", -1, true],
+	["RECOIL_Smooth_on", true, true],
+	["RECOIL_variety_on", true, true],
+	["SWAY_incrase_on", 1, true],
 
 	// TSP Animate
-	["tsp_cba_animate_door", false, true],
+	["tsp_cba_animate_door", true, true],
 	["tsp_cba_animate_dynamicReadyBush", true, true],
 	["tsp_cba_animate_dynamicReadyFriend", 3, true],
 	["tsp_cba_animate_dynamicReadyFriendAngle", 35, true],
@@ -524,7 +526,7 @@ _settings = [
 	["tsp_cba_breach_autoTime", 5, true],
 	["tsp_cba_breach_lockDoor", 0.5, true],
 	["tsp_cba_breach_lockHouse", 0.15, true],
-	["tsp_cba_breach_vanilla", true, true]
+	["tsp_cba_breach_vanilla", false, true]
 ];
 
 

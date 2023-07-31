@@ -240,12 +240,12 @@ class Cfg3DEN {
                     idc = CFG_S_SIDE_IDC;
 
                     columns = 4;
-                    strings[] = {"BluFor", "OpFor", "Indy", "Civ"};
+                    strings[] = {"BLU", "OPF", "IND", "CIV"};
                     values[] = {0, 1, 2, 3};
                     tooltips[] = {
-                        "BluFor (West)",
-                        "OpFor (East)",
-                        "Independent (Resistance)",
+                        "(West)",
+                        "(East)",
+                        "(Resistance)",
                         "Civilian (None of the others)"
                     };
                 };

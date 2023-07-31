@@ -196,84 +196,52 @@ class CfgRespawnGroups {
 
         class Configurations {
             class A1: Alpha {
-                displayName = "Alpha 1";
-                markerText = "1";
+                displayName = "A";
+                markerText = "1-1";
                 colorTeam1 = "RED";
-                colorTeam2 = "GREEN";
+                colorTeam2 = "RED";
             };
             class A2: Alpha {
-                displayName = "Alpha 2";
-                markerText = "2";
-                colorTeam1 = "BLUE";
-                colorTeam2 = "YELLOW";
-            };
-            class A3: A1 {
-                displayName = "Alpha 3";
-                markerText = "3";
-            };
-            class A4: A2 {
-                displayName = "Alpha 4";
-                markerText = "4";
+                displayName = "A";
+                markerText = "1-2";
+                colorTeam1 = "GREEN";
+                colorTeam2 = "GREEN";
             };
             class B1: Bravo {
-                displayName = "Bravo 1";
-                markerText = "1";
+                displayName = "B";
+                markerText = "1-2";
                 colorTeam1 = "RED";
                 colorTeam2 = "GREEN";
             };
             class B2: Bravo {
-                displayName = "Bravo 2";
+                displayName = "B";
                 markerText = "2";
-                colorTeam1 = "BLUE";
-                colorTeam2 = "YELLOW";
-            };
-            class B3: B1 {
-                displayName = "Bravo 3";
-                markerText = "3";
-            };
-            class B4: B2 {
-                displayName = "Bravo 4";
-                markerText = "4";
+                colorTeam1 = "RED";
+                colorTeam2 = "GREEN";
             };
             class C1: Charlie {
-                displayName = "Charlie 1";
-                markerText = "1";
+                displayName = "C";
+                markerText = "1-1";
                 colorTeam1 = "RED";
                 colorTeam2 = "GREEN";
             };
             class C2: Charlie {
-                displayName = "Charlie 2";
-                markerText = "2";
-                colorTeam1 = "BLUE";
-                colorTeam2 = "YELLOW";
-            };
-            class C3: C1 {
-                displayName = "Charlie 3";
-                markerText = "3";
-            };
-            class C4: C2 {
-                displayName = "Charlie 4";
-                markerText = "4";
-            };
-            class D1: Delta {
-                displayName = "Delta 1";
-                markerText = "1";
+                displayName = "C";
+                markerText = "1-22";
                 colorTeam1 = "RED";
                 colorTeam2 = "GREEN";
             };
-            class D2: Delta {
+            class W1: Weapons {
+                displayName = "W";
+                markerText = "1-1";
+                colorTeam1 = "RED";
+                colorTeam2 = "RED";
+            };
+            class W2: Weapons {
                 displayName = "Delta 2";
                 markerText = "2";
-                colorTeam1 = "BLUE";
-                colorTeam2 = "YELLOW";
-            };
-            class D3: D1 {
-                displayName = "Delta 3";
-                markerText = "3";
-            };
-            class D4: D2 {
-                displayName = "Delta 4";
-                markerText = "4";
+                colorTeam1 = "GREEN";
+                colorTeam2 = "GREEN";
             };
             class E1: Echo {
                 displayName = "Echo 1";
@@ -287,14 +255,6 @@ class CfgRespawnGroups {
                 colorTeam1 = "BLUE";
                 colorTeam2 = "YELLOW";
             };
-            class E3: E1 {
-                displayName = "Echo 3";
-                markerText = "3";
-            };
-            class E4: E2 {
-                displayName = "Echo 4";
-                markerText = "4";
-            };
             class F1: Foxtrot {
                 displayName = "Foxtrot 1";
                 markerText = "1";
@@ -306,14 +266,6 @@ class CfgRespawnGroups {
                 markerText = "2";
                 colorTeam1 = "BLUE";
                 colorTeam2 = "YELLOW";
-            };
-            class F3: F1 {
-                displayName = "Foxtrot 3";
-                markerText = "3";
-            };
-            class F4: F2 {
-                displayName = "Foxtrot 4";
-                markerText = "4";
             };
             class G1: Golf {
                 displayName = "Golf 1";
@@ -327,14 +279,6 @@ class CfgRespawnGroups {
                 colorTeam1 = "BLUE";
                 colorTeam2 = "YELLOW";
             };
-            class G3: G1 {
-                displayName = "Golf 3";
-                markerText = "3";
-            };
-            class G4: G2 {
-                displayName = "Golf 4";
-                markerText = "4";
-            };
             class H1: Hotel {
                 displayName = "Hotel 1";
                 markerText = "1";
@@ -347,14 +291,6 @@ class CfgRespawnGroups {
                 colorTeam1 = "BLUE";
                 colorTeam2 = "YELLOW";
             };
-            class H3: H1 {
-                displayName = "Hotel 3";
-                markerText = "3";
-            };
-            class H4: H2 {
-                displayName = "Hotel 4";
-                markerText = "4";
-            };
             class I1: India {
                 displayName = "India 1";
                 markerText = "1";
@@ -366,14 +302,6 @@ class CfgRespawnGroups {
                 markerText = "2";
                 colorTeam1 = "BLUE";
                 colorTeam2 = "YELLOW";
-            };
-            class I3: I1 {
-                displayName = "India 3";
-                markerText = "3";
-            };
-            class I4: I2 {
-                displayName = "India 4";
-                markerText = "4";
             };
         };
     };
@@ -415,16 +343,6 @@ class CfgRespawnGroups {
                 markerText = "2";
                 colorTeam1 = "GREEN";
             };
-            class A3: Alpha {
-                displayName = "Alpha 3";
-                markerText = "3";
-                colorTeam1 = "BLUE";
-            };
-            class A4: Alpha {
-                displayName = "Alpha 4";
-                markerText = "4";
-                colorTeam1 = "YELLOW";
-            };
             class B1: Bravo {
                 displayName = "Bravo 1";
                 markerText = "1";
@@ -434,16 +352,6 @@ class CfgRespawnGroups {
                 displayName = "Bravo 2";
                 markerText = "2";
                 colorTeam1 = "GREEN";
-            };
-            class B3: Bravo {
-                displayName = "Bravo 3";
-                markerText = "3";
-                colorTeam1 = "BLUE";
-            };
-            class B4: Bravo {
-                displayName = "Bravo 4";
-                markerText = "4";
-                colorTeam1 = "YELLOW";
             };
             class C1: Charlie {
                 displayName = "Charlie 1";
@@ -455,16 +363,6 @@ class CfgRespawnGroups {
                 markerText = "2";
                 colorTeam1 = "GREEN";
             };
-            class C3: Charlie {
-                displayName = "Charlie 3";
-                markerText = "3";
-                colorTeam1 = "BLUE";
-            };
-            class C4: Charlie {
-                displayName = "Charlie 4";
-                markerText = "4";
-                colorTeam1 = "YELLOW";
-            };
             class D1: Delta {
                 displayName = "Delta 1";
                 markerText = "1";
@@ -474,16 +372,6 @@ class CfgRespawnGroups {
                 displayName = "Delta 2";
                 markerText = "2";
                 colorTeam1 = "GREEN";
-            };
-            class D3: Delta {
-                displayName = "Delta 3";
-                markerText = "3";
-                colorTeam1 = "BLUE";
-            };
-            class D4: Delta {
-                displayName = "Delta 4";
-                markerText = "4";
-                colorTeam1 = "YELLOW";
             };
             class E1: Echo {
                 displayName = "Echo 1";
@@ -495,16 +383,6 @@ class CfgRespawnGroups {
                 markerText = "2";
                 colorTeam1 = "GREEN";
             };
-            class E3: Echo {
-                displayName = "Echo 3";
-                markerText = "3";
-                colorTeam1 = "BLUE";
-            };
-            class E4: Echo {
-                displayName = "Echo 4";
-                markerText = "4";
-                colorTeam1 = "YELLOW";
-            };
             class F1: Foxtrot {
                 displayName = "Foxtrot 1";
                 markerText = "1";
@@ -514,16 +392,6 @@ class CfgRespawnGroups {
                 displayName = "Foxtrot 2";
                 markerText = "2";
                 colorTeam1 = "GREEN";
-            };
-            class F3: Foxtrot {
-                displayName = "Foxtrot 3";
-                markerText = "3";
-                colorTeam1 = "BLUE";
-            };
-            class F4: Foxtrot {
-                displayName = "Foxtrot 4";
-                markerText = "4";
-                colorTeam1 = "YELLOW";
             };
             class G1: Golf {
                 displayName = "Golf 1";

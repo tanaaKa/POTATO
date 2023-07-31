@@ -7,7 +7,7 @@ private _unit = missionNamespace getVariable ["ace_arsenal_center", player]; ///
 
 switch (toLower _fncString)
   do {
-    case ("init"): {systemChat "Init";};
+    case ("init"): {};
     case ("uniform"): {
       if (typeName GVAR(loadout_uniform) == "STRING" && {
           GVAR(loadout_uniform) == "NotSet"
