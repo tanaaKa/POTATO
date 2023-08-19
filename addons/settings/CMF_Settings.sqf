@@ -152,6 +152,7 @@ _settings = [
 	[QACEGVAR(medical,limping), 1, true], // default: 1
 	[QACEGVAR(medical_treatment,allowSelfIV), 1, true], // default: true
 	[QACEGVAR(medical_treatment,woundReopenChance), 0.69, true], // default: who fuckin knows eh bud
+    [QACEGVAR(medical_treatment,locationsBoostTraining), true, true], // default: false
 
 	// ACE Medical Extras:
 	[QACEGVAR(medical_ai,enabledFor), 0, true],
