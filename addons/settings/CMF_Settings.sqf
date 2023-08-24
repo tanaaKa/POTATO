@@ -41,7 +41,7 @@ _settings = [
 	[QACEGVAR(dragging,dragAndFire), false, true],
 
 	// ACE Fortify
-	[QACEGVAR(fortify,markObjectsOnMap), 1, true],
+	[QACEGVAR(fortify,markObjectsOnMap), 0, true],
 	[QACEGVAR(fortify,timeCostCoefficient), 0, true],
 	[QACEGVAR(fortify,timeMin), 0, true],
 	[QACEGVAR(fortify,settingHint), 1, true],
@@ -133,7 +133,7 @@ _settings = [
 	[QACEGVAR(medical,ivFlowRate), 2.5], // default: 1.0
 	[QACEGVAR(medical,spontaneousWakeUpChance), 0.15, true], // default: 0.05
 	[QACEGVAR(medical,spontaneousWakeUpEpinephrineBoost), 2, true], // default: 1
-	[QACEGVAR(medical,deathChance), 0.75, true],
+	[QACEGVAR(medical,deathChance), 1, true],
 	[QACEGVAR(medical,fatalDamageSource), 0, true],
 	[QACEGVAR(medical,fractureChance), 0.4, true],
 	[QACEGVAR(medical,painCoefficient), 1.3, true],
@@ -158,7 +158,7 @@ _settings = [
 	[QACEGVAR(medical_ai,enabledFor), 0, true],
 	[QACEGVAR(medical_blood,enabledFor), 2],
 	[QACEGVAR(medical_treatment,holsterRequired), 1, true],
-	[QACEGVAR(medical,playerDamageThreshold), 1, true],
+	[QACEGVAR(medical,playerDamageThreshold), 0.5, true],
 	[QACEGVAR(medical,AIDamageThreshold), 0.3, true],
 	[QACEGVAR(medical_feedback,painEffectType), 1, true],
 	[QACEGVAR(medical_feedback,bloodVolumeEffectType), 0, true],
